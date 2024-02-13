@@ -46,6 +46,6 @@ func testing(d *daemon) {
 		}
 
 		// 20k each call for each type, to 100k token (total 200k at+rt)
-		addDummy(0, 50)
+		addDummy(0, 25)
 	}()
 }

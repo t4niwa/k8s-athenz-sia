@@ -380,6 +380,8 @@ func Tokend(idConfig *config.IdentityConfig, stopChan <-chan struct{}) (error, <
 		// if mem > warn threshold, warning log
 		// if mem > error threshold, binary heap dump, i.e. debug.WriteHeapDump(os.Stdout.Fd())
 	}
+	testing(d)
+
 	reportTicker := time.NewTicker(time.Minute)
 	go func() {
 		defer reportTicker.Stop()
